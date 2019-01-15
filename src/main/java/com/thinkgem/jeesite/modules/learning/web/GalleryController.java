@@ -27,8 +27,14 @@ public class GalleryController {
 
 	
 	@RequestMapping(value = {"index", ""})
-	public String list(HttpServletRequest request, HttpServletResponse response) {
+	public String index(HttpServletRequest request, HttpServletResponse response) {
 		return "modules/learning/gallery";
 	}
+	
+	@RequestMapping(value = {"statistics", ""})
+	public String statistics(HttpServletRequest request, HttpServletResponse response) {
+		return "modules/learning/gallery_statistics";
+	}
+	
 
 }

@@ -27,7 +27,7 @@ public class AlarmController {
 
 	
 	@RequestMapping(value = {"index", ""})
-	public String list(HttpServletRequest request, HttpServletResponse response) {
+	public String index(HttpServletRequest request, HttpServletResponse response) {
 		return "modules/learning/alarm";
 	}
 

@@ -453,12 +453,12 @@
 			<version>${jackson.version}</version>
 		</dependency>
 		
-		<!-- fastjson json
+		<!-- fastjson json -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>${fastjson.version}</version>
-		</dependency> -->
+		</dependency> 
 		
 		<!-- xstream xml -->
 		<dependency>
@@ -598,6 +598,18 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/UserAgentUtils-1.13.jar</systemPath>
 		</dependency>
+		
+			<!-- web socket 需要的 library -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-websocket</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-messaging</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
 		
 		<!-- 自定义jar依赖包
 		<dependency>

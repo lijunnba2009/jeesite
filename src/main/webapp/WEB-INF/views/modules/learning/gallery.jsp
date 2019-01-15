@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+<%@ include file="/WEB-INF/views/include/head.jsp"%>
 <html>
 <head>
 <link href="${ctxStatic}/common/leaning.css" type="text/css" rel="stylesheet" />
@@ -49,13 +50,19 @@ $(function(){
 	    myChart.setOption(option, true);
 	}
 })
-	
 
+function toStatistics(){
+	window.open("${ctx}/learning/gallery/statistics");
+}
+	
 </script>
 <title>人流</title>
 </head>
 <body>
+
+<input id="btnSubmit" class="btn btn-primary " type="button" value="统计" onclick="toStatistics();"/>
 <div id="container" class="img-back">
+
 
 </div>
 </body>
