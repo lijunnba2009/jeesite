@@ -188,16 +188,47 @@ function showPie(){
 <title>人流数据统计</title>
 </head>
 <body>
-<div id="container1" style="width:50%;height:50%;float:left;">
+<div style="width:50%;height:50%;float:left;">
+		<div class="searchForm">
+		<select onchange="changeLine()">
+			<option value="1">年度</option>
+			<option value="2">月度</option>
+			<option value="3">周度</option>
+			<option value=""></option>
+		</select>
+	</div>
+	<div id="container1" style="width:100%;height:90%;">
+	
+	</div>
 
 
 </div>
-<div id="container2" style="width:50%;height:50%;float:left;">
+<div style="width:50%;height:50%;float:left;">
+	<div class="searchForm" style="height:10%">
+		<select onchange="changeBar()">
+			<option value="1">年度</option>
+			<option value="2">月度</option>
+			<option value="3">周度</option>
+			<option value=""></option>
+		</select>
+	</div>
+	<div id="container2" style="width:100%;height:90%;">
+	
+	</div>
 
 
 </div>
-<div id="container3" style="width:100%;height:50%;">
-
+<div style="width:100%;height:50%;">
+	<div class="searchForm">
+		<select onchange="changePie()">
+				<option value="1">年度</option>
+				<option value="2">月度</option>
+				<option value="3">周度</option>
+			</select>
+	</div>
+	<div id="container3" style="width:100%;height:90%;">
+	
+	</div>
 
 </div>
 </body>
